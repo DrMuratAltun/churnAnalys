@@ -43,8 +43,8 @@ with st.form(key='churn_form'):
 
 if submit_button:
     input_data = pd.DataFrame({
-        'CustomerId': [customer_id],
-        'Surname': [surname],
+        #'CustomerId': [customer_id],
+        #'Surname': [surname],
         'CreditScore': [credit_score],
         'Geography': [geography],
         'Gender': [gender],
