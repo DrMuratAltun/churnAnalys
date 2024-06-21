@@ -26,8 +26,8 @@ def preprocess_data(input_data):
 st.title('Churn Prediction App')
 
 with st.form(key='churn_form'):
-    customer_id = st.text_input('Customer ID')
-    surname = st.text_input('Surname')
+    #customer_id = st.text_input('Customer ID')
+    #surname = st.text_input('Surname')
     credit_score = st.number_input('Credit Score', min_value=300, max_value=900, value=600)
     geography = st.selectbox('Geography', options=le.classes_)
     gender = st.selectbox('Gender', options=['Male', 'Female'])
