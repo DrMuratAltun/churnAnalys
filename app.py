@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
 # Modeli ve dönüştürücüleri yükleyelim
-model = tf.keras.models.load_model('churn_model.keras')
+#model = tf.keras.models.load_model('churn_model.keras')
 
 le = LabelEncoder()
 le.classes_ = np.load('classes.npy', allow_pickle=True)
@@ -57,8 +57,8 @@ if submit_button:
         'EstimatedSalary': [estimated_salary]
     })
 
-    preprocessed_data = preprocess_data(input_data.drop(['CustomerId', 'Surname'], axis=1))
-    prediction = model.predict(preprocessed_data)
-    prediction = np.round(prediction).astype(int)[0][0]
-
-    st.write(f'Prediction for Customer {customer_id} ({surname}): {"Exited" if prediction == 1 else "Not Exited"}')
+    #preprocessed_data = preprocess_data(input_data.drop(['CustomerId', 'Surname'], axis=1))
+    #prediction = model.predict(preprocessed_data)
+    #prediction = np.round(prediction).astype(int)[0][0]
+    
+    #st.write(f'Prediction for Customer {customer_id} ({surname}): {"Exited" if prediction == 1 else "Not Exited"}')
