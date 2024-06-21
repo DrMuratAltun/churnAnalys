@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import tensorflow as tf
+#import tensorflow as tf
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
 # Modeli ve dönüştürücüleri yükleyelim
